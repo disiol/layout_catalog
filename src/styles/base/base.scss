@@ -9,6 +9,7 @@ h3,
 h4,
 h5,
 h6,
+body,
 p {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
@@ -17,9 +18,5 @@ p {
 }
 
 body {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: $secondary-color;
 }
