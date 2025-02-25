@@ -1,20 +1,20 @@
 .catalog {
   display: grid;
-  grid-template-columns: repeat(1, $width);
-  gap: $gap;
-  padding: $padding;
+  grid-template-columns: repeat(1, auto);
+  gap: $catalog-gap;
+  padding: $catalog-padding;
   justify-content: center;
 
   @include respond-to('small') {
     // Використовуємо міксин для медіа-запитів
-    grid-template-columns: repeat(2, $width);
+    grid-template-columns: repeat(2, auto);
   }
 
   @include respond-to('medium') {
-    grid-template-columns: repeat(3, $width);
+    grid-template-columns: repeat(3, auto);
   }
 
   @include respond-to('large') {
-    grid-template-columns: repeat(4, $width);
+    grid-template-columns: repeat(4, auto);
   }
 }
