@@ -11,6 +11,16 @@
 
   flex-direction: column;
 
+  @include transition(transform);
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 1; // Ensure the hovered card is above others
+    .product-card__details-title {
+      color: #34568b;
+    }
+  }
+
   &__icon {
     margin: 0 auto 40px;
 

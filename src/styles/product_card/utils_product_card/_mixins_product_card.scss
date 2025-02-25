@@ -47,3 +47,7 @@
   width: $width;
   height: $height;
 }
+
+@mixin transition($property) {
+  transition: $property 0.3s ease;
+}
